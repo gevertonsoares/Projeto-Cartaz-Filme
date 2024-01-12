@@ -1,0 +1,179 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Genos', sans-serif;
+}
+
+h1 {
+    color: red;
+    animation: color-change 3s infinite;
+}
+
+@keyframes color-change {
+    0% { color: red; }
+    50% { color: blue; } 
+    100% { color: red; }
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    background-image: url('./img/luxa.org-opacity-changed-5.jpg');
+    background-size: cover;
+    background-position: center 30%;
+}
+
+.div-header {
+    width: 100%;
+    min-height: 20%;
+    background-image: url("./img/wp11872516-spider-man-ultra-wide-wallpapers.jpg");
+    background-size: cover;
+    background-position: center 30%;
+}
+
+
+@media (max-width: 1980px) {
+    .div-header {
+      height: 20rem;
+    }
+}
+
+
+.main-container {
+    width: 100%;
+    height: 100%;
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media (max-width: 1280px) {
+    .main-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        gap: 50px;
+    }
+}
+
+
+.info {
+    width: 400px;
+    min-height: 400px;
+    padding: 5px;
+    border: solid;
+    border-radius: 0 50px 50px 0;
+    background-color: rgb(219, 198, 218);
+    color: rgb(108, 34, 125);
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+    animation: slideIn 3s;
+}
+
+@media (max-width: 1280px) {
+    .info {
+        width: 100%;
+        height: 250px;
+        text-align: center;
+        border: solid;
+        border-radius: 0 0px 0px 0;
+    }
+}
+
+@keyframes slideIn {
+    0% { transform: translateX(-50%); }
+    100% { transform: translateX(0%); }
+}
+
+
+
+.text-titulo {
+    margin-top: 50px;
+    font-family:'Genos', sans-serif;
+}
+
+.text-titulo2 {
+    text-align: center;
+    font-family:'Genos', sans-serif;
+}
+
+.text-info {
+    margin-top: 20px;
+    text-align: left;
+    font-family:'Genos', sans-serif;
+    font-size: larger;
+    font-weight: 400;
+    padding: 20px;
+}
+
+.img-container-gwen {
+    width: 400px;
+    min-height: 400px;
+    padding: 10px;
+    border: solid;
+    border-radius: 50px 0 0 50px;
+    background-color: rgb(219, 198, 218);
+    color: rgb(108, 34, 125);
+    background-image: url("./img/spider_gwen_render_by_kingevan210_dfyxhx5.png");
+    background-size: cover;
+    background-position: center;
+    animation: slideOut 3s;
+}
+
+@media (max-width: 1280px) {
+    .img-container-gwen {
+        width: 100%;
+        height: 250px;
+        text-align: center;
+        border: solid;
+        border-radius: 0 0px 0px 0;
+    }
+}
+
+@keyframes slideOut {
+    0% { transform: translateX(+50%); }
+    100% { transform: translateX(0%); }
+}
+
+.info-filme {
+    text-align: center;
+    font-size: larger;
+    font-family:Arial, Helvetica, sans-serif;
+    animation: slideY 3s;
+}
+
+@keyframes slideY {
+    0% { transform: translateY(+20%); }
+    100% { transform: translateY(0%); }
+}
+
+.video {
+    border-radius: 20px;
+    box-shadow: 34px 40px 13px 10px rgba(108, 34, 125,0.3);
+}
+
+@media (max-width: 760px) {
+    .video {
+        width: 350px;
+        height: 350px;
+    }
+}
+
+footer {
+    width: 100%;
+    min-height: 5%;
+    background-color: rgb(219, 198, 218);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+span {
+    
+    text-align: center;
+}
+
